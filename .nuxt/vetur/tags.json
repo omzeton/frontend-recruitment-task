@@ -1,8 +1,14 @@
 {
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
+  "Carousel": {
+    "description": "Auto imported from components/Carousel.vue"
   },
-  "LazyLogo": {
-    "description": "Auto imported from components/Logo.vue"
+  "LazyCarousel": {
+    "description": "Auto imported from components/Carousel.vue"
+  },
+  "ToggleButton": {
+    "description": "Auto imported from components/ToggleButton.vue"
+  },
+  "LazyToggleButton": {
+    "description": "Auto imported from components/ToggleButton.vue"
   }
 }
