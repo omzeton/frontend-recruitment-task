@@ -1,16 +1,21 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+export const state = {
+    activeOption: 0,
+}
 
-import actions from './actions';
-import state from './state';
-import getters from './getters';
-import mutations from './mutations';
+export const actions = {
+    SELECT_NEW_OPTION({ commit }, option) {
+        commit('selectNewOption', option);
+    },
+}
 
-Vue.use(Vuex);
+export const mutations = {
+    selectNewOption(state, payload) {
+        state.activeOption = payload;
+    }
+}
 
-export default new Vuex.Store({
-    actions,
-    getters,
-    state,
-    mutations,
-});
+export const getters = {
+    GET_SELECTED_OPTION(state) {
+        return state.activeOption;
+    },
+}

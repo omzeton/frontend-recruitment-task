@@ -37,8 +37,17 @@ export default {
           value: "t02",
         },
       ],
-      selectedOption: 0,
     };
+  },
+  computed: {
+    selectedOption: {
+      get() {
+        return this.$store.getters.GET_SELECTED_OPTION;
+      },
+      set(val) {
+        this.$store.dispatch("SELECT_NEW_OPTION", val);
+      },
+    },
   },
   methods: {
     toggleOption(option) {
