@@ -2,7 +2,8 @@
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/ola.krecisz/Desktop/projects/frontend-recruitment-task/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/a12345678/Desktop/frontend-recruitment-task/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6bd0abc4"
   }
 ]
