@@ -1,6 +1,6 @@
 <template>
   <div class="carousel mt-40">
-    <div ref="mainCarousel" class="main-carousel ml-32">
+    <div ref="mainCarousel" class="main-carousel ml-16 md:ml-32">
       <div v-for="cell in 20" :key="cell" class="carousel-cell mr-16 bg-white">
         <div class="cell__image">
           <img

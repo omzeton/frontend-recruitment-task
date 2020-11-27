@@ -9,7 +9,7 @@
         @click="toggleOption(index)"
       >
         <p
-          class="bold-14 text-white mx-32 my-8"
+          class="toggle__wrapper__btn__text bold-14 text-white mx-32 my-8"
           :class="selectedOption === index ? 'text-white' : 'text-offblack-600'"
         >
           {{ option.name }}
@@ -64,14 +64,26 @@ export default {
   display: flex;
   justify-content: center;
   &__wrapper {
+    width: calc(100vw - 32px);
     display: flex;
     border-radius: 30px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include desktop-min {
+      width: auto;
+      overflow-x: visible;
+    }
     &__btn {
       border-radius: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      &__text {
+        white-space: nowrap;
+      }
     }
   }
 }
